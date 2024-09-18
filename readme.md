@@ -10,11 +10,11 @@ React ez global state
 npm i @geeleed/react-ez-globalstate
 ```
 
-เท่านี้ก็ได้ react component <GlobalState> และ hook คือ useGlobalState แล้ว
+เท่านี้ก็ได้ react component ```<GlobalState>``` และ hook คือ ```useGlobalState``` แล้ว
 
 ## การ setup ใน project (ตัวอย่างนี้ใช้ vite.js)
 
-นำเข้า GlobalState มาครอบ App
+นำเข้า ```<GlobalState></GlobalState>``` มาครอบ ```<App/>```
 
 ```bash
 import GlobalState from "@geeleed/react-ez-globalstate/dist/GlobalState";
@@ -38,7 +38,7 @@ createRoot(document.getElementById("root")).render(
 
 ## การใช้งาน
 
-หลังจาก setup แล้วจะใช้งานใน component ต่าง ๆ ได้ เช่น ใช้ใน <App/>
+หลังจาก setup แล้วจะใช้งานใน component ต่าง ๆ ได้ เช่น ใช้ใน ```<App/>```
 จะใช้ hook useGlobalState ในการอ่านและแก้ค่า state
 
 ```bash

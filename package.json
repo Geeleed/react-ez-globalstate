@@ -1,12 +1,21 @@
 {
   "name": "@geeleed/react-ez-globalstate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": ["state-management","react-component","global-state","redux"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Geeleed/react-ez-globalstate"
+  },
+  "keywords": [
+    "state-management",
+    "react-component",
+    "global-state",
+    "redux"
+  ],
   "author": "geeleed",
   "license": "MIT",
   "description": "React component with state management hook. ez",
