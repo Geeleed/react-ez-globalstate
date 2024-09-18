@@ -14,14 +14,18 @@ npm i @geeleed/react-ez-globalstate
 
 ## การ setup ใน project (ตัวอย่างนี้ใช้ vite.js)
 
-นำเข้า <GlobalState> มาครอบ <App/>
+นำเข้า GlobalState มาครอบ App
+
+```bash
+import GlobalState from "@geeleed/react-ez-globalstate/dist/GlobalState";
+```
 
 ```bash
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import GlobalState from "@geeleed/react-ez-globalstate";
+import GlobalState from "@geeleed/react-ez-globalstate/dist/GlobalState";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -36,6 +40,10 @@ createRoot(document.getElementById("root")).render(
 
 หลังจาก setup แล้วจะใช้งานใน component ต่าง ๆ ได้ เช่น ใช้ใน <App/>
 จะใช้ hook useGlobalState ในการอ่านและแก้ค่า state
+
+```bash
+import { useGlobalState } from "@geeleed/react-ez-globalstate/dist/GlobalState";
+```
 
 ```bash
 const [state, setState] = useGlobalState();
@@ -66,7 +74,7 @@ state["geeleed"] // "hello world"
 ```bash
 
 import React from "react";
-import { useGlobalState } from "@geeleed/react-ez-globalstate";
+import { useGlobalState } from "@geeleed/react-ez-globalstate/dist/GlobalState";
 
 export default function App() {
   const [state, setState] = useGlobalState();
